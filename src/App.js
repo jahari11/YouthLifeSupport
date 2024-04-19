@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Programs from './Pages/Programs'
 import Events from './Pages/Events'
+import Footer from './Component/Footer'
 
 
 const App = () => {
@@ -14,10 +15,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' index element={<Home />} />
-        <Route path='/about' index={<About />} />
-        <Route path='/programs' index={<Programs />} />
-        <Route path='/events' index={<Events />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/programs' element={<Programs />} />
+        <Route path='/events' element={<Events />} />
       </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   )

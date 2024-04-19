@@ -17,8 +17,24 @@ const Home = () => {
           </div>
         </div>
         <div className="our-pb-section">
-          <h2>Our Programs</h2>
           <Cards />
+        </div>
+        <div className="elevator-pitch">
+          <div className="e-p-photo-container">
+          <img src="https://images.unsplash.com/photo-1536337005238-94b997371b40?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         alt="" />
+         <div className="e-p-overlay">
+          <div className='e-p-text'>
+          <h3>Helping at risk youth and families receive the resources and tools necessary to bring about a positive change.</h3>
+          <div className='e-p-icons'>
+            <span><i class="fa-regular fa-circle-check"></i>Education</span>
+            <span><i class="fa-regular fa-circle-check"></i>Research</span>
+            <span><i class="fa-regular fa-circle-check"></i>Organization</span>
+            <span><i class="fa-regular fa-circle-check"></i>Advocacy</span>
+          </div>
+         </div>
+         </div>
+        </div>
         </div>
     </div>
   )

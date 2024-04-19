@@ -9,9 +9,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
 .App {
   background:#ececec;
 }
+
+
 
 a {
   text-decoration: none;
@@ -43,6 +46,10 @@ a {
 .logo {
   width: 180px;
   height: 100%;
+}
+
+.logo-copyright {
+  text-align: center;
 }
 
 .logo img {
@@ -144,13 +151,23 @@ text-align: center;
   font-weight: 500;
 }
 
-.card-container {
+.c-section {
   background: #cccccc;
+}
+
+.c-section-h {
+  text-align: center;
+  font-size: 35px;
+}
+
+.card-container {
+  
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
   align-items: center;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .card {
@@ -158,10 +175,259 @@ text-align: center;
   height: 400px;
   background: #cf2e2e;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card h2 {
   display: flex;
   align-items: center;
   color: white;
+}
+
+.card i {
+  color: white;
+  font-size: 40px;
+}
+
+.card a {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #ececec;
+}
+
+.e-p-photo-container {
+  height: 600px;
+  position: relative;
+}
+
+.e-p-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.e-p-photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+.e-p-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 45px;
+  gap: 16px;
+}
+
+.e-p-text h3 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.e-p-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.a-i-container {
+  position: relative;
+  height: 300px;
+}
+
+
+.a-i-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-header {
+  text-align: center;
+  font-size: 45px;
+}
+
+.about-us-pitch {
+  background: #ececec;
+  text-align: center;
+  padding: 18px;
+}
+
+.about-us-pitch .year {
+  color: #cf2e2e;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.aup-header {
+  font-size: 42px;
+}
+
+.aup-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.aup-text p {
+  font-size: 20px;
+}
+
+.aup-text span {
+  color: #cf2e2e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team-container {
+  background-color: #cccccc;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+  padding: 15px;
+  width: 75%;
+  border-bottom: 1px solid #cf2e2e;
+}
+
+.team-card img {
+  width: 350px;
+  object-fit: cover;
+}
+
+.about-pitch {
+  background: black;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.about-pitch span {
+  color: white;
+  font-size: 35px;
+}
+
+
+
+
+.footer {
+  background-color:#cf2e2e;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.social-links a {
+  margin: 0 6px;
+  color: black;
+  font-size: 20px;
+
+}
+
+.social-links i:hover {
+  color: #cccccc;
+}
+
+.footer span {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.address h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.logo-copyright span {
+  text-align: center;
+}
+.address p {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .pb-section {
+    flex-wrap: wrap;
+    margin: 6px 12px;
+  }
+
+  .e-p-overlay h3 {
+    font-size: 30px;
+  }
+
+  .e-p-icons  {
+    flex-direction: column;
+  }
+
+  .overlay {
+    padding: 0;
+  }
+
+  .team-card {
+    flex-wrap: wrap;
+  }
+
+  .team-card img {
+    width: 100%;
+  }
+
+  .about-pitch span {
+    font-size: 18px;
+    margin: 0 12px;
+  }
+
+ 
 }
