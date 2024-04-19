@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f91b31be.css",
+    "main.js": "/static/js/main.e94cd2d6.js",
+    "static/media/YLSNLOGO.jpg": "/static/media/YLSNLOGO.e991ba082d0b45ed53f0.jpg",
+    "static/media/PHOTO3.jpg": "/static/media/PHOTO3.4da6644bfc2f87b033a9.jpg",
+    "static/media/PHOTO2.jpg": "/static/media/PHOTO2.b901192f8dbf09166183.jpg",
+    "static/media/PHOTO1.jpg": "/static/media/PHOTO1.67e409c5d5bc2702e6be.jpg",
+    "index.html": "/index.html",
+    "main.f91b31be.css.map": "/static/css/main.f91b31be.css.map",
+    "main.e94cd2d6.js.map": "/static/js/main.e94cd2d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f91b31be.css",
+    "static/js/main.e94cd2d6.js"
+  ]
+}
