@@ -2,7 +2,9 @@ import React from 'react'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <div className='events'>
+      <h3>Events TBA</h3>
+    </div>
   )
 }
 
