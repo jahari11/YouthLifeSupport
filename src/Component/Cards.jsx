@@ -21,6 +21,7 @@ const Cards = () => {
         <div className='card' key={card.id}>
             <i class="fa-regular fa-flag"></i>
           <h2>{card.frontContent}</h2>
+          <span>Read More</span>
         </div>
         </Link>
       ))}
