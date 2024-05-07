@@ -2,6 +2,7 @@ import React from 'react'
 import PhotoGallery from '../Component/PhotoGallery'
 import YLSLOGO from '../Assets/YLSNLOGO.jpg'
 import Cards from '../Component/Cards'
+import transition from '../Component/transition'
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
          alt="" />
          <div className="e-p-overlay">
           <div className='e-p-text'>
-          <h3>Helping at risk youth and families receive the resources and tools necessary to bring about a positive change.</h3>
+          <h3>Empowering youth and families with essential resources and tools to catalyze positive transformations and foster growth.</h3>
           <div className='e-p-icons'>
             <span><i class="fa-regular fa-circle-check"></i>Education</span>
             <span><i class="fa-regular fa-circle-check"></i>Research</span>

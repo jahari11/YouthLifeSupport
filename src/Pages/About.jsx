@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../Component/Banner'
 import Team from '../Component/Team'
+import transition from '../Component/transition'
 
 const About = () => {
   return (

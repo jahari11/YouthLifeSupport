@@ -1,5 +1,6 @@
 import React from 'react'
 import ProgramTitles from '../Component/ProgramTitles'
+import transition from '../Component/transition'
 
 const Programs = () => {
   return (
