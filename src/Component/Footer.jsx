@@ -14,9 +14,8 @@ const Footer = () => {
             <span>Youth L.I.F.E. Support Network, Inc. ©2024</span>
         </div>
         <div className="social-links">
-        <Link to="https://facebook.com"><i class="fa-brands fa-facebook"></i></Link>
-        <Link to="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></Link>
-        <Link to="https://instagram.com"><i class="fa-brands fa-instagram"></i></Link>
+        <Link to="https://www.facebook.com/people/Youth-Life-Support-Network-Inc/61559826671354/"><i class="fa-brands fa-facebook"></i></Link>
+        <Link to="https://www.instagram.com/youthlifesupportnetwork"><i class="fa-brands fa-instagram"></i></Link>
         </div>
         </div>
     </div>
