@@ -71,7 +71,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 50px;
 }
 
 .photo-controls button {
@@ -518,6 +518,19 @@ text-align: center;
     padding: 0;
   }
 
+  .overlay h2 {
+    font-size: 30px;
+  }
+
+  .overlay span {
+    max-width: none;
+    font-size: 18px;
+  }
+
+  .photo-controls {
+    top: 85%;
+  }
+
   .team-card {
     flex-wrap: wrap;
   }
@@ -545,6 +558,7 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
  }
+
 
  
 }
