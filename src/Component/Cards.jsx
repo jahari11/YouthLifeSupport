@@ -13,15 +13,34 @@ const Cards = () => {
   ];
 
   return(
-  <div class='bg-ylsnGrey p-4'>
-  <h2 class='text-center  text-4xl text-white'>Our Programs</h2>
-  <div class='flex justify-between flex-wrap'>
+  <div class='p-4'>
+  <h2 class='text-center  text-5xl text-ylsnRed mb-4'>Our Programs</h2>
+  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
   {cardsData.map(card => (
-      <Link to={`/programs#${card.sectionId}`} class=" m-6 block max-w-sm p-6 border-gray-200 rounded-lg shadow hover:bg-gray-100 bg-ylsnRed dark:hover:bg-gray-700 flex flex-col min-h-[300px]">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">{card.frontContent}</h5>
-        <p class="font-normal text-lg mb-3 text-white text-center">{card.backContent}</p>
-        <p class='underline text-center text-lg text-white'>Read more</p>
-      </Link>
+      <Link to={`/programs#${card.sectionId}`} class="group relative block bg-black">
+      <img
+    alt=""
+    src="https://images.unsplash.com/photo-1516149893016-813d9a01d5d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-ylsnRed">Youth Life Support Network</p>
+
+    <p className="text-xl font-bold text-white sm:text-2xl">{card.frontContent}</p>
+
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div
+        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p className="text-md text-white">
+          {card.backContent}
+        </p>
+        <p className='text-sm text-white underline'>Read More</p>
+      </div>
+    </div>
+  </div>
+  </Link>
     ))}
   </div>
   </div>
