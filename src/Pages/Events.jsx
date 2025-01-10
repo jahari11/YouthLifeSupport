@@ -17,7 +17,7 @@ const Events = () => {
       {imageGallery.map((item) => (
         <div
           key={item.id}
-          className='group cursor-pointer'
+          className=' cursor-pointer'
           onClick={() => handleImageClick(item.id)}
         >
           <img

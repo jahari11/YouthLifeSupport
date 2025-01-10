@@ -1,7 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 const imageGallery = [
   { id: 1, title: 'Albany Firebirds Fundraiser', imageUrl: 'https://i.ibb.co/ZBrCbFL/20241130-204423.jpg' },
@@ -16,16 +18,22 @@ const EventDetails = () => {
   if (!currentEvent) return <p>Event not found.</p>;
 
   return (
-    <div className='h-screen p-6'>
-      <h1 className='text-2xl font-bold text-center mb-6'>{currentEvent.title}</h1>
-      <Swiper spaceBetween={10} slidesPerView={1} loop>
+    <div className="p-6">
+      <h1 className="text-2xl font-bold text-center mb-6">{currentEvent.title}</h1>
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={1}
+        loop
+        navigation
+        modules={[Navigation]} 
+      >
         {imageGallery.map((item) => (
           <SwiperSlide key={item.id}>
             <div className="flex justify-center">
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className="w-[400px] h-[300px] object-cover rounded-md"
+                className="w-[800px] h-[800px] object-cover rounded-md"
               />
             </div>
           </SwiperSlide>
@@ -36,4 +44,3 @@ const EventDetails = () => {
 };
 
 export default EventDetails;
-

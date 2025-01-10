@@ -12,6 +12,7 @@
 
 .App {
   background:#ececec;
+
 }
 
 
@@ -456,6 +457,7 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   padding: 15px;
+ 
 }
 
 .footer-container {
