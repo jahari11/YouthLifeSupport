@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Programs from './Pages/Programs';
 import Events from './Pages/Events';
 import Footer from './Component/Footer'
+import EventDetails from './Pages/EventDetails';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/programs' element={<Programs />} />
           <Route path='/events' element={<Events />} />
+          <Route path='/events/:id' element={<EventDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>
