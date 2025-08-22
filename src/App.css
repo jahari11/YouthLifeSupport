@@ -34,6 +34,15 @@ a {
   gap: 16px;
 }
 
+/* Mobile menu toggle hidden by default on desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 .navbar-links a {
   color: #666;
   font-size: 20px;
@@ -47,6 +56,13 @@ a {
 .logo {
   width: 180px;
   height: 100%;
+}
+
+/* Prevent logo from blowing out layout on small screens */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 140px;
+  }
 }
 
 .logo-copyright {
@@ -82,6 +98,12 @@ a {
   font-size: 30px;
   cursor: pointer;
   
+}
+
+/* Larger tap targets for accessibility */
+.photo-controls button {
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .photo-container img {
@@ -129,6 +151,13 @@ a {
 .pb-section-image {
   width: 800px;
   height: 100%;
+}
+
+/* Make large fixed image containers responsive */
+.pb-section-image,
+.team-card img,
+.program0 img {
+  max-width: 100%;
 }
 
 .pb-section-image img {
@@ -185,6 +214,15 @@ text-align: center;
   gap: 20px;
   padding: 0 12px;
   transition: transform 0.3s ease-in-out;
+}
+
+/* Avoid card overflow on small screens */
+@media screen and (max-width: 380px) {
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
 }
 
 .card h2:hover {
@@ -334,6 +372,13 @@ text-align: center;
   border-bottom: 1px solid #cf2e2e;
 }
 
+/* Ensure team section fits narrow viewports */
+@media screen and (max-width: 768px) {
+  .team-card {
+    width: 100%;
+  }
+}
+
 .team-card img {
   width: 350px;
   object-fit: cover;
@@ -475,6 +520,14 @@ text-transform: uppercase;
 
 }
 
+/* Increase social icon tap area on small screens */
+@media screen and (max-width: 768px) {
+  .social-links a {
+    font-size: 24px;
+    padding: 8px;
+  }
+}
+
 .social-links i:hover {
   color: #cccccc;
 }
@@ -519,6 +572,30 @@ text-transform: uppercase;
     font-size: 14px;
   }
 
+  /* Stack nav links into a panel */
+  .navbar-links {
+    position: absolute;
+    top: 64px;
+    right: 12px;
+    left: 12px;
+    display: none;
+    flex-direction: column;
+    background: #ececec;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 50;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #333;
+  }
+
   .pb-section {
     flex-wrap: wrap;
     margin: 6px 12px;
@@ -547,6 +624,13 @@ text-transform: uppercase;
 
   .photo-controls {
     top: 85%;
+    padding: 0 16px;
+  }
+
+  .photo-controls button {
+    font-size: 24px;
+    height: 44px;
+    width: 44px;
   }
 
   .team-card {
@@ -577,6 +661,6 @@ text-transform: uppercase;
   flex-wrap: wrap;
  }
 
-
+ 
  
 }

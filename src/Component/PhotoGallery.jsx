@@ -24,17 +24,17 @@ const PhotoGallery = () => {
   return (
     <div className='photo-gallery'>
         <div className='photo-container'>
-            <img src={photos[currentIndex]} alt={`Photos ${currentIndex+1}`} />
+            <img src={photos[currentIndex]} alt={`Photos ${currentIndex+1}`} loading="lazy" />
             <div className="overlay">
           <h2>{texts[currentIndex].header}</h2>
           <span>{texts[currentIndex].spanText}</span>
           </div>
             <div className='photo-controls'>
-            <button onClick={prevPhoto}>
-            <i class="fa-solid fa-chevron-left"></i>
+            <button onClick={prevPhoto} aria-label="Previous slide">
+            <i className="fa-solid fa-chevron-left"></i>
             </button>
-            <button onClick={nextPhoto}>
-            <i class="fa-solid fa-chevron-right"></i>
+            <button onClick={nextPhoto} aria-label="Next slide">
+            <i className="fa-solid fa-chevron-right"></i>
             </button>
         </div>
         </div>
