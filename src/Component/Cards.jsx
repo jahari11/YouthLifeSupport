@@ -13,14 +13,15 @@ const Cards = () => {
   ];
 
   return(
-  <div class='p-4'>
-  <h2 class='text-center  text-5xl text-ylsnRed mb-4'>Our Programs</h2>
+  <div className='p-4'>
+  <h2 className='text-center  text-5xl text-ylsnRed mb-4'>Our Programs</h2>
   <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
   {cardsData.map(card => (
-      <Link to={`/programs#${card.sectionId}`} class="group relative block bg-black">
+      <Link to={`/programs#${card.sectionId}`} key={card.id} className="group relative block bg-black">
       <img
     alt=""
     src="https://images.unsplash.com/photo-1516149893016-813d9a01d5d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    loading="lazy"
     className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
   />
 
