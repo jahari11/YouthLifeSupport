@@ -11,7 +11,7 @@ const Footer = () => {
             <p>120 Emmons Street Schenectady, NY 12305 518-280-7584</p>
         </div>
         <div className="logo-copyright">
-            <span>Youth L.I.F.E. Support Network, Inc. ©2024</span>
+            <span>Youth L.I.F.E. Support Network, Inc. ©2025</span>
         </div>
         <div className="social-links">
         <Link to="https://www.facebook.com/people/Youth-Life-Support-Network-Inc/61559826671354/"><i class="fa-brands fa-facebook"></i></Link>

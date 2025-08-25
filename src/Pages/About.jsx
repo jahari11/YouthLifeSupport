@@ -6,7 +6,16 @@ import transition from '../Component/transition'
 const About = () => {
   return (
     <div className='section'>
-      <Banner />
+      {/* Header Section */}
+      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
+          <p className="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">
+            Empowering youth and families with essential resources and tools to catalyze positive transformations
+          </p>
+        </div>
+      </div>
+
       <div className="about-us-pitch">
         <span className='year'>Since 2012</span>
         <h3 className='aup-header'>Youth L.I.F.E. Support Network, Inc.</h3>
@@ -19,7 +28,7 @@ const About = () => {
       <Team />
       <div className="about-pitch">
         <span>
-          Without a “Network”, there can be no REAL success!
+          Without a "Network", there can be no REAL success!
         </span>
       </div>
     </div>
