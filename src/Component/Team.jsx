@@ -2,6 +2,7 @@ import React from 'react'
 import person1 from '../Assets/Person1.jpg';
 import person2 from '../Assets/Person2.jpg'
 import person3 from '../Assets/Person3.jpg'
+
 const Team = () => {
     const myTeam = [
         {id:1, name: 'Name', title: 'Title', description:'Dec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida donec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida.', image:person2 },
@@ -9,14 +10,15 @@ const Team = () => {
         {id:3, name: 'Name', title: 'Title', description:'Dec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida donec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida.', image: person3}
     ]
   return (
-    <div>
-        <div className="team-container">
+    <div className="team-section">
+        <h2>Our Team</h2>
+        <div className="team-grid">
             {myTeam.map(card => (
-                <div className="team-card">
-                    <img src={card.image} alt="" />
-                    <div>
-                    <h4>{card.title}</h4>
+                <div key={card.id} className="team-card">
+                    <img src={card.image} alt={card.name} />
+                    <div className="team-card-content">
                         <h3>{card.name}</h3>
+                        <p><strong>{card.title}</strong></p>
                         <p>{card.description}</p>
                     </div>
                 </div>
